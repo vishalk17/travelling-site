@@ -1,0 +1,307 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Loto", sans-serif;
+}
+/* <!--nabar> */
+#navbar{
+    background: #f9f9f9;
+
+}
+
+#logo{
+    
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+#logo span{
+    color:#ffa500
+}
+
+  .navbar-toggler span{
+    color: #ffa500;
+}  
+
+.navbar-nav{
+    margin-left: 20px;
+}
+
+.nav-item  .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item  .nav-link:hover{
+    background: #ffa500;
+   color: white;
+}
+
+#navbar form button{
+    background: orange;
+    color: #f9f9f9;
+    border: none;
+}
+
+
+/* <!--home ---> */
+.home{
+    width:100%;
+    height:100vh;
+    background-image: url(cc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home  .content{
+   text-align: center;
+   padding-top: 200px;
+}
+
+
+.home .content h5{
+    color: #f9f9f9;
+    font-size: 38px;
+    width: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home.content h1{
+    color: white;
+    font-size: 70px;
+    width: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after{
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear ;
+}
+@keyframes changetext{
+    10%{content: "Maharastra";}
+    20%{content: "Kerala";}
+    30%{content: "Rajstan";}
+    40%{content: "Manali";}
+    50%{content: "Goa";}
+    60%{content: "Mahableshwar";}
+    70%{content: "Alibaug";}
+}
+
+.home.content p{
+    color: white;
+    font-size: 15px;
+    width: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.home .content a{
+ padding: 10px;
+ background:#f9f9f9 ;
+ color: black;
+ letter-spacing: 2px;
+ font-weight: 550;
+ border-radius:5px ;
+ text-decoration: none;
+ transition:0.5s ;
+}
+
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+
+@media (max-width:850px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+/* book section start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.main-text h1{
+    text-align: center;
+    box-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book.card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;  
+}
+
+.book.row{
+    margin-top: 30px;
+}
+
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+   box-shadow:0px 5px 5px -6px black ;
+    
+}
+
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+   resize: none;
+   box-shadow:0px 5px 5px -6px black ;
+   height: 200px;
+}
+.Submit{
+    width: 160px;
+    font-size:16px ;
+    font-weight:550 ;
+    background: #ffa500;
+    color:white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.Submit:hover{
+    width: 170px;
+}
+
+@media(max-width:765px){
+    .book{
+        padding:0px;
+    }
+    .main-text h1{
+     margin-top: 20px;
+    }
+}
+/* book section end */
+
+/* section packages start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt span{
+    color:#ffa500;
+}
+
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow:  rgba(0,0,0,1)0px 4px 12px;
+    
+}
+
+.packages.card.card-body{
+    background: transparent;
+}
+
+.packages.card.card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages.card.card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+
+
+.star i{
+    font-size:15px;
+} 
+
+.packages.card.card-body h6{
+    font-size: 20px;
+}
+
+ 
+
+
+
+
+
+
+/*section service started */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+.services.card{
+    box-shadow: rgba(0,0,0,0.1)0px 4px 12px; 
+    border: none;
+    cursor: pointer;
+}
+ 
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+
+
+}
+/*section service ended */
+
+
+/* section gallery started */
+.gallery{
+    margin-top: 50px;
+}
+
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1)0px 4px 12px;
+    cursor: pointer;
+}
+
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card:hover img:hover{
+    transform: scale(1.1);
+}
+/* section gallery started */
